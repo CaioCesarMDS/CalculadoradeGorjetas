@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <title>Calculadora de Gorjetas</title>
+
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <div id="conteiner">
+        <div>
+            <div id="title">
+                <h1>Calculadora de Gorjetas</h1>
+            </div>
+            <div id="paragraph">
+                <form id="tipsForm">
+                    <label for="bill">
+                        <p> Quanto ficou a conta?</p>
+                    </label>
+                    <p>R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required> </p>
+                    <label for="serviceQuality">
+                        <p>Como você avalia o serviço?</p>
+                    </label>
+                    <p>
+                        <select name="serviceQuality" id="serviceQuality" class="formSelect" required>
+                            <option disabled selected value="0">-Escolha uma opção-</option>
+                            <option value="0.20">20% - Incrível</option>
+                            <option value="0.15">15% - Bom</option>
+                            <option value="0.10">10% - Aceitável</option>
+                            <option value="0.05">5% - Ruim</option>
+                            <option value="0.02">2% - Péssimo</option>
+                        </select>
+                    </p>
+                    <label for="people">
+                        <p>Quantas pessoas vão dividir a conta?</p>
+                    </label>
+                    <p> <input type="number" placeholder="2" name="people" id="people" class="formInput" required>
+                        Pessoa(s)</p>
+                    <button class="buttonSubmit" type="submit">Calcular!</button>
+                </form>
+            </div>
+            <div id="totalTip">
+                Gorjeta Total:
+                R$<span id="tip">0.00</span>
+                <p id="each">cada</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./src/js/index.js"></script>
+
+</html>

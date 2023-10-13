@@ -1,0 +1,74 @@
+:root {
+    --primary-color: lightcoral;
+    --secondary-color: dimgrey;
+    --tertiary-color: rgb(46, 30, 30);
+    --quartenary-color: Gainsboro;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: "Secular one";
+}
+
+#conteiner {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 5px 5px 5px var(--tertiary-color);
+    border-radius: 20px;
+}
+
+#title {
+    background-color: var(--quartenary-color);
+    color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#paragraph {
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.formInput {
+    background: white;
+    padding: 5px 5px 8px 8px;
+    cursor: pointer;
+}
+
+.formSelect {
+    height: 35px;
+    width: 180px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.formInput:focus,
+.formSelect:focus {
+    border: 3px solid black;
+    outline: none;
+}
+
+.buttonSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    margin: 5px auto;
+    font-size: 17px;
+    color: white;
+}
+
+#totalTip {
+    font-size: 20px;
+    text-align: left;
+    text-align: center;
+}
